@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARCHITECT-RESPONSIVE</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .maintop {
+        width: 100%;
+        height: auto;
+        /* border: 2px solid blue; */
+
+
+
+    }
+
+    .mainbar {
+        width: 100%;
+        height: 50px;
+        /* border: 1px solid red; */
+        background-color: white;
+        position: relative;
+        /* position: fixed; */
+        z-index: 1;
+
+    }
+
+    .logo {
+        width: 150px;
+        height: 50px;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 80px;
+    }
+
+    .logo h2 {
+        width: 50px;
+        height: 50px;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        vertical-align: top;
+
+    }
+
+    .logo p {
+        width: 90px;
+        height: 25px;
+        /* border: 1px solid blue; */
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+    }
+
+    .navbar {
+        width: 270px;
+        height: 50px;
+        /* border: 1px solid greenyellow; */
+        display: inline-block;
+        position: absolute;
+        right: 15%;
+        top: 0px;
+    }
+
+    .navbar ul {
+        list-style: none;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 10px;
+
+    }
+
+    .bar2,
+    .bar3 {
+
+        margin-left: 50px;
+    }
+
+    /* ////////////////building area//////////// */
+
+
+    .firstpic {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid yellow; */
+        /* position: relative; */
+    }
+
+    .building {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid yellow; */
+        position: relative;
+
+    }
+
+    .firstpic img {
+        width: 100%;
+        height: auto;
+    }
+
+    .pictext {
+        width: max-content;
+        height: auto;
+        /* border: 1px solid green; */
+        position: absolute;
+        top: 47%;
+        left: 40%;
+    }
+
+
+    .pictext h3 {
+        width: 50px;
+        height: auto;
+        /* border: 1px solid orangered; */
+        background-color: black;
+        display: inline-block;
+        vertical-align: top;
+        font-size: 30px;
+        color: white;
+    }
+
+    .pictext p {
+        width: 145px;
+        height: auto;
+        /* border: 1px solid greenyellow; */
+        display: inline-block;
+        vertical-align: top;
+        font-size: 30px;
+        color: red;
+    }
+
+    /* ///////////////////////////Proj section////////////////////// */
+
+    .projectsection {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        /* position: relative; */
+        /* padding: 150px; */
+
+    }
+
+
+    .Proj {
+        width: 95%;
+        height: auto;
+        border-bottom: 1px solid gray;
+        left: 3%;
+        padding: 60px;
+    }
+
+    .Proj p {
+        font-size: 40px;
+        top: 20px;
+    }
+
+
+    /* ////////////Project//////IMG AREA/////////////////////// */
+    .imgarea {
+        width: 100%;
+        height: auto;
+        /* border: 2px solid red; */
+
+    }
+
+    .fourpic2 {
+
+        width: 97%;
+        height: auto;
+        /* border: 1px solid black; */
+        margin: auto;
+
+    }
+
+    .fourpic {
+
+        width: 97%;
+        height: auto;
+        /* border: 1px solid blue; */
+        margin: auto;
+
+    }
+
+    .displaypic2 {
+        width: 24.5%;
+        height: auto;
+        /* border: 1px solid green; */
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+
+    }
+
+    .move {
+        margin-left: 0.20%;
+    }
+
+
+    .displaypic2 img {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        vertical-align: top;
+        /* border: 1px solid black; */
+    }
+
+
+    .Summer {
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        /* border: 1px solid blue; */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+    .Summer p {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        text-align: center;
+        color: white;
+        padding-top: 5px;
+    }
+
+
+
+
+    /* //////////////////////about////////////////// */
+
+
+    .about {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid yellow; */
+        /* border: 1px solid red; */
+        /* position: relative; */
+        /* padding: 150px; */
+
+    }
+
+
+    .about1 {
+        width: 95%;
+        height: auto;
+        border-bottom: 1px solid gray;
+        left: 3%;
+        padding: 60px;
+    }
+
+    .about1 h3 {
+
+        font-size: 40px;
+        top: 20px;
+    }
+
+    .about1 hr {
+        font-weight: 400;
+        top: 20px;
+
+
+    }
+
+    .about1 p {
+        width: 100%;
+        text-align: left;
+        font-size: 13.5px;
+        font-weight: 500;
+        padding-top: 30px;
+    }
+
+    /* /////////////////////Team founder//////////////////// */
+
+    .team {
+        width: 100%;
+        height: 700px;
+        /* border: 1px solid blue; */
+    }
+
+    .founder {
+        width: 97%;
+        height: auto;
+        /* border: 1px solid green; */
+        /* display: inline-block;
+        vertical-align: top; */
+        margin-left: 20px;
+        /* margin: auto; */
+    }
+
+    .teamfour {
+
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        display: inline-block;
+        vertical-align: top;
+        margin: auto;
+
+    }
+
+    .teampic {
+        width: 24.5%;
+        height: auto;
+        /* border: 1px solid green; */
+        display: inline-block;
+        vertical-align: top;
+        /* left: 20%; */
+    }
+
+    .pic1 {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid orange; */
+    }
+
+    .ceo {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid yellow; */
+    }
+
+    .teamname {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid green; */
+    }
+
+    .teamname p {
+        width: 100%;
+        margin-top: 3%;
+    }
+
+    .button {
+        width: 100%;
+        height: 200%;
+        border: 1px solid gray;
+        background-color: rgb(241, 241, 241);
+        margin-top: 15%;
+        border: none;
+    }
+
+    .button h3 {
+        margin-left: 30%;
+
+    }
+
+    /* //////////////////////////form Area///////////////// */
+
+    .formarea {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid black; */
+        padding: 30px;
+    }
+
+    .Con {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid red; */
+        /* padding-top: 20; */
+    }
+
+    .Con h4 {
+        padding-top: 20px;
+    }
+
+    .Con p {
+        padding-top: 20px;
+    }
+
+    .name {
+        width: 100%;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .email {
+        width: 100%;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .Subject {
+        width: 100%;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .comment {
+        width: 100%;
+        height: 40px;
+        margin-top: 30px;
+    }
+
+    .send {
+        width: 150px;
+        height: 40px;
+        background-color: black;
+        color: white;
+        margin-top: 30px;
+    }
+
+    .map {
+        width: 100%;
+        height: auto;
+        /* border: 1px solid green; */
+
+    }
+
+    .picin {
+        width: 95%;
+        height: auto;
+        /* border: 1px solid black; */
+        margin-left: 30px;
+    }
+
+    .mapin {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .create {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        text-align: center;
+        color: white;
+        font-size: 100%;
+        padding: 1px;
+
+    }
+
+    .create p {
+        margin-top: 20px;
+
+
+    }
+
+
+    /* /////////////////////////////////////// */
+    @media screen and (max-width:1000px) {
+
+        .teampic {
+            width: 48%;
+            height: auto;
+        }
+    }
+
+    @media screen and (max-width:992px) {
+
+        .displaypic2 {
+            width: 48%;
+            height: auto;
+        }
+
+        .movedown1 {
+            margin-bottom: 10px;
+        }
+
+        .move3 {
+            margin-left: 0%;
+        }
+
+        .move2 {
+            margin-right: 0%;
+        }
+    }
+
+    @media screen and (max-width:600px) {
+
+        .navbar {
+            display: none;
+        }
+
+        .pictext p {
+            display: none;
+
+        }
+
+        .displaypic2 {
+            width: 100%;
+            height: auto;
+        }
+
+        .movedown {
+            margin-bottom: 10px;
+        }
+
+        .move3,
+        .move2 {
+            margin-left: 0%;
+
+
+        }
+
+        .teampic {
+            width: 100%;
+            height: auto;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="maintop">
+        <div class="mainbar">
+            <div class="logo">
+                <h2>B R</h2>
+                <p>Architects</p>
+
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li class="bar1">Projects </li>
+                    <li class="bar2">About</li>
+                    <li class="bar3">Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="firstpic">
+        <div class="building">
+            <img src="./architect.jpg" alt="architect">
+            <div class="pictext">
+                <h3>BR</h3>
+                <p>Architects</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ///////////////////Project section/////////////////////// -->
+
+    <div class="projectsection">
+        <div class="Proj">
+            <p>Projects</p>
+            <hr>
+        </div>
+    </div>
+    <div class="imgarea">
+        <div class="fourpic">
+            <div class="displaypic2 movedown1 movedown">
+                <img src="./house1.jpg" alt="">
+                <div class="Summer">
+                    <p>Summer House</p>
+                </div>
+            </div>
+            <div class="displaypic2 move move2 movedown ">
+                <img src="./house2.jpg" alt="">
+                <div class="Summer">
+                    <p>Brick House</p>
+                </div>
+            </div>
+            <div class="displaypic2 move move3 movedown">
+                <img src="./house3.jpg" alt="">
+                <div class="Summer">
+                    <p>Renovated</p>
+                </div>
+            </div>
+            <div class="displaypic2 move move2">
+                <img src="./house4.jpg" alt="">
+                <div class="Summer">
+                    <p>Barn House</p>
+                </div>
+            </div>
+        </div>
+        <div class="fourpic">
+            <div class="displaypic2 movedown1 movedown">
+                <img src="./house2.jpg" alt="">
+                <div class="Summer">
+                    <p>Summer House</p>
+                </div>
+            </div>
+            <div class="displaypic2 move move2 movedown ">
+                <img src="./house1.jpg" alt="">
+                <div class="Summer">
+                    <p>Brick House</p>
+                </div>
+            </div>
+            <div class="displaypic2 move move3 movedown">
+                <img src="./house4.jpg" alt="">
+                <div class="Summer">
+                    <p>Renovated</p>
+                </div>
+            </div>
+            <div class="displaypic2 move move2">
+                <img src="./house3.jpg" alt="">
+                <div class="Summer">
+                    <p>Barn House</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ///////////////////////About////////////////////// -->
+    <div class="about">
+        <div class="about1">
+            <h3>About</h3>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut lahore et
+                dolor
+                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commondo cansequat. Excepteur sint occaecat cupidatat non proident,
+                sunt
+                in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,sed
+                do eiusmod tempor incididunt ut lahore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud
+                exercitation ullamco laboris nisi ut aliqua ex ea commodo consectetur
+            </p>
+        </div>
+    </div>
+    <!-- //////////////////////////Team Founder/////////////// -->
+
+    <div class="team">
+        <div class="founder">
+            <div class="teamfour">
+                <div class="teampic">
+
+                    <div class="pic1">
+                        <img class="ceo" src="./team2.jpg" alt="">
+                        <div class="teamname">
+                            <h2>John Doe</h2>
+                            <p>CEO & Founder</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <div class="button">
+                                <h3>Contact</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teampic">
+                    <div class="pic1">
+                        <img class="ceo" src="./team1.jpg" alt="">
+                        <div class="teamname">
+                            <h2>Jane Doe</h2>
+                            <p>Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <div class="button">
+                                <h3>Contact</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teampic">
+                    <div class="pic1">
+                        <img class="ceo" src="./team3.jpg" alt="">
+                        <div class="teamname">
+                            <h2>Make Ross</h2>
+                            <p>Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <div class="button">
+                                <h3>Contact</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="teampic">
+                    <div class="pic1">
+                        <img class="ceo" src="./team4.jpg" alt="">
+                        <div class="teamname">
+                            <h2>Dan Star</h2>
+                            <p>Architect</p>
+                            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque
+                                elementum.</p>
+                            <div class="button">
+                                <h3>Contact</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ///////////////////////Form/////////////////////? -->
+        <div class="formarea">
+            <div class="Con">
+                <h4>Contact</h4>
+                <p>Lets get in touch and talk about your next project.
+                </p>
+            </div>
+            <input class="name" type="text" placeholder="Name">
+            <input class="email" type="text" placeholder="Email">
+            <input class="Subject" type="text" placeholder="Subject">
+            <input class="comment" type="text" placeholder="Comment">
+            <button class="send">SEND MESSAGE</button>
+        </div>
+        <div class="map">
+            <div class="picin">
+                <img class="mapin" src="./map.jpg" alt="">
+            </div>
+        </div>
+        <!-- <div class="create">
+            <p>Power by w3.css</p>
+        </div> -->
+
+</body>
+
+</html>
